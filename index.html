@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/sun.png">
+  <title>Temperature converter</title>
+  <link rel="stylesheet" href="./bootstrap.css">
+  
+</head>
+<body class="h-100 bg-secondary">
+
+  <div class="container-fluid text-center mx-auto ">
+    <h2 class="site__heading p-5">Temperature converter</h2>
+
+    <form class="temp__form mx-auto w-75" action="https://echo.htmlacademy.ru" method="GET">
+      <div class="form-group d-md-flex">
+        <label class="alert alert-primary text-nowrap h4 m-0 mr-md-3 w-50" for="#temp_input">Temperature in celsius</label>
+        <input class="temp__input form-control h-auto w-50" type="text" step="any" id="temp_input" name="tempereture-C" placeholder="°C" required>
+      </div>
+
+      <div class="form-group d-md-flex">
+        <label class="alert alert-primary text-nowrap h4 m-0 mr-md-3 w-50" for="#temp_output">Temperature in fahrenheit</label>
+        <input class="temp__output form-control h-auto w-50" type="text" id="temp_input" name="tempereture-F" placeholder="32 °F" disabled>
+      </div>
+
+      <button class="form-submit btn btn-primary h1 form-control" type="submit">&#10226; Convert</button>
+    </form>
+  </div>
+
+
+  
+  <script src="./main.js"></script>
+</body>
+</html>
